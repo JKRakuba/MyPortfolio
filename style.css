@@ -1,0 +1,274 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body{
+	font-family: 'sans-serif';
+  }
+
+* 
+/*NAVIGATION*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  .header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #1b1b1b;
+    z-index: 1;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+  }
+  
+  .logo a {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .logo a span {
+    color: #ebdb04c2;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu a {
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.2s all ease-in-out;
+    color: #fff;
+  }
+  
+  .menu:hover a {
+    opacity: 0.4;
+  }
+  
+  .menu a:hover {
+    opacity: 1;
+    color: #1b1b1b;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  #menu-toggle:checked ~ .menu {
+    transform: scale(1, 1);
+  }
+  
+  @media only screen and (max-width: 1920px) {
+    .menu {
+      flex-direction: column;
+      background-color: #ebdb04c2;
+      align-items: start;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+      transform: scale(1, 0);
+      transform-origin: top;
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .menu a {
+      margin-left: 12px;
+    }
+  
+    .menu li {
+      margin-bottom: 10px;
+    }
+  
+    .menu-icon {
+      display: block;
+      color: #fff;
+      font-size: 28px;
+      cursor: pointer;
+    }
+  
+
+
+/*HOME*/
+
+
+/*Background Image*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.background{
+  width: 1326px;
+  height: 700px;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.background img {
+  margin-top: 0px;
+  min-height: 700px;
+  max-width: 1326px;
+  background: url(girlcode.png) no-repeat top center fixed;
+  background-size: cover;
+  padding: 0px 0px;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+img{
+  width: 1326px;
+  height: 700px;
+}
+
+@media only screen and (max-width: 1280px) {
+  img {
+  width: 100%;
+  }
+  }
+
+
+
+
+/*PROFILE*/
+
+/*PROJECTS*/
+
+/*CONNECT*/
+
+/*FOOTER*/
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+footer{
+	background-color: #1b1b1b;
+    padding: 10px 10px;
+}
+.footer-col{
+   width: 25%;
+   padding: 30px 30px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #ebdb04c2;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ebdb04c2;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #ffffff;
+	background-color: #ebdb04c2;
+}
+
+.copyright-footer {
+  background-color: #ebdb04c2; /* Background color */
+  color: #1b1b1b;           /* Text color */
+  text-align: center;     /* Centered text */
+  padding: 15px 10px;       /* Padding top/bottom */
+  position: relative;     /* Positioning */
+  bottom: 0;              /* Stick to bottom */
+  width: 100%;           /* Full width */
+}
+
+.copyright-container {
+  max-width: 1200px;      /* Max width for larger screens */
+  margin: 0 auto;         /* Centering */
+  padding: 10px 60px;        /* Horizontal padding */
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+  }
